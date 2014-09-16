@@ -47,20 +47,19 @@ Code has been written with comments and hence would be easy to understand.
 
 Set the working directory to the unzipped file containing the UCI HAR Dataset
 
-1.	i.  Read the train and test datasets. Each containing X (X_train & X_test) - Dataset, Y - Activity Labels and Subject - Subject labels
-	ii. Comine them both
+1.	i.  Read the train and test datasets. Each containing X (X_train & X_test) - Dataset, Y - Activity Labels and Subject - Subject labels.  
+	ii. Comine the two datasets.  
 
-2. 	i.  Read the features.txt and check for mean and std in the names of variables. If they are present noted down the occurance and the descriptive name of the varaible.
-	ii. Saved only the required columns in a new dataset as a subset of combined dataset that contains only the required columns.
+2. 	i.  Read the features.txt and check for mean and std in the names of variables. If they are present noted down the occurance and the descriptive name of the varaible.  
+	ii. Saved only the required columns in a new dataset as a subset of combined dataset that contains only the required columns.  
 
-3.	i.  Converted the Activity Labels into descriptive names. E.g. Check if its 1, and convert into "Walking" and so on.
-	ii. Created the descriptive row names that combine the subject labels and descriptive activity labels. E.g. Test_1_Walking refers to Subject 1 from Test data while walking etc.
+3.	i.  Converted the Activity Labels into descriptive names. E.g. Check if its 1, and convert into "Walking" and so on.  
+	ii. Created the descriptive row names that combine the subject labels and descriptive activity labels. E.g. Test_1_Walking refers observations taken when Subject 1 from Test data while walking etc.  
 
-5. 	i.  Calculated mean for all the variables grouped by the descriptive row names.
-	ii. The dataset containing 180 variables is created.
+5. 	i.  Calculated mean for all the variables grouped by the descriptive row names.  
+	ii. The dataset containing 180 variables is created.  
 
-4.	i.  Added a column name for first column containing the grouped by variable before all the column names noted at 2.i.
-	ii. Added the descriptive required column names the above dataset.
+4.	i.  Added a column name for first column containing the grouped by variable before all the column names noted at 2.i.  
+	ii. Added the descriptive required column names the above dataset.  
 
-Used write.table() to create a new text file named "Tidy_UCIHAR_Means.txt" and uploaded the same.
-====================================================================================================
+Used write.table() to create a new text file named "Tidy_UCIHAR_Means.txt" in the working directory and uploaded the same.
